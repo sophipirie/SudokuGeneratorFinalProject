@@ -1,3 +1,5 @@
+#old commit file no longer used in final code from before I knew how to use github
+
 def print_board(board):
     print('---------------------------------------')
     for i in range(9):
