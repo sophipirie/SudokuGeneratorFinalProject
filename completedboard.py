@@ -7,11 +7,6 @@ class CompletedBoard(BlankBoard):
     def __init__(self):
         super().__init__()
         self.board_copy = deepcopy(self.board)
-    # def __str__(self):
-    #    return super().__str__()
-    # def add_one(self):
-    #     self.board[1 , 1] = 9
-
     def check_board(self, index, row, col):
         is_valid = True
         if np.any(self.board[:, col] == index):
@@ -94,7 +89,7 @@ class CompletedBoard(BlankBoard):
         else:
             return -1, -1
 
-    def generate_board(self):
+    def generate_board(self, completed_dif):
         i, j = CompletedBoard.find_zero(self)
         while i != -1:
             ran_row = random.randint(0, 8)
@@ -109,13 +104,8 @@ class CompletedBoard(BlankBoard):
             if CompletedBoard.solve_copy(self, board_copy) is False:
                 self.board[ran_row][ran_col] = 0
             num_zeros = CompletedBoard.count_num_zeros(self)
-            if num_zeros < 75:
+            if num_zeros < completed_dif:
                 CompletedBoard.solve(self)
             i, j = CompletedBoard.find_zero(self)
 
         return self.board
-
-
-# b = CompletedBoard()
-# b.generate_board()
-# print(b)
