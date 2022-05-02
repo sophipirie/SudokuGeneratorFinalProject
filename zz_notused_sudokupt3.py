@@ -1,4 +1,4 @@
-#old commit file no longer used in final code
+#old commit file no longer used in final code but I want to show my progress
 
 import random
 import numpy as np
