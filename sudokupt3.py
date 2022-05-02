@@ -1,3 +1,5 @@
+#old commit file no longer used in final code
+
 import random
 import numpy as np
 from copy import deepcopy
