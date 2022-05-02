@@ -1,3 +1,5 @@
+#old commit file no longer used in final code
+
 import random
 import numpy as np
 board = (np.zeros((9, 9))).astype(int)
