@@ -1,4 +1,4 @@
-#old commit file no longer used in final code from before I knew how to use github
+#old commit file no longer used in final code from before I knew how to use github but I want to my show progress
 
 def print_board(board):
     print('---------------------------------------')
