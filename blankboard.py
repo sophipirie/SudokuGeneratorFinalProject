@@ -1,7 +1,8 @@
 import numpy as np
 class BlankBoard:
+    """ Class Initializes the Sudoku Board """
     def __init__(self):
-        self.board = (np.zeros((9, 9))).astype(int)
+        self.board = (np.zeros((9, 9))).astype(int) #creates 9x9 matrix
 
     def __str__(self):
         m = ''
