@@ -1,3 +1,5 @@
+#old commit file no longer used in final code from before I knew how to use github but I still want to show my progress
+
 def check_board(board, index, row, col):
     is_valid = True
 
