@@ -1,6 +1,7 @@
 from finalizeboard import FinalizeBoard
 import numpy as np
 class PlayBoard(FinalizeBoard):
+    """ Takes in the completed Sudoku Board and makes it playable for the user"""
     def __init__(self):
         super().__init__()
 
@@ -60,7 +61,7 @@ class PlayBoard(FinalizeBoard):
         difficulty = 0
 
         while choose_difficulty_bool:
-            difficulty = int(input('Enter Value: '))
+            difficulty = int(input('Enter Value for Difficulty: '))
             if difficulty > 3 or difficulty < 1:
                 print('Try Again')
             else:
